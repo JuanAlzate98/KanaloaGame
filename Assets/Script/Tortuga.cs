@@ -10,6 +10,7 @@ public class Tortuga : MonoBehaviour
     public float upForce=200f;
     private RotateTor rotateTor;
    
+   
 
 
 private void Awake(){
@@ -24,10 +25,12 @@ private void Awake(){
 
     }
 
+
     // Update is called once per frame
     private void Update(){
     if (isDead == false){
             if (Input.GetMouseButtonDown(0)) {
+
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upForce));
                 anim.SetTrigger("Flap");

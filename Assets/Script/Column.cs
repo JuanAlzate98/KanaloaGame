@@ -10,6 +10,7 @@ public class Column : MonoBehaviour
         if (collider.CompareTag("Player"))
             {
             GameController.instance.TorScore();
+            
             }
     }
     // Start is called before the first frame update
